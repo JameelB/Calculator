@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Calculator </title>
+  <link rel="stylesheet" href="calculator.css"/>
+</head>
+
+<body>
+  <div id="outerContainer">
+    <table>
+      <!--First Row-->
+      <tr>
+        <td>
+          <button id="clear" onclick="clearDisplayScreen()">
+            <b> C </b>
+          </button>
+        </td>
+        <td colspan="3">
+          <!-- display screen -->
+          <input id="displayScreen" type="text" value="" readonly></input>
+        </td>
+      </tr>
+
+      <!--Second Row-->
+      <tr>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(7)"> 7 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(8)"> 8 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(9)"> 9 </button>
+        </td>
+        <td>
+          <button class="operatorKey" onclick="operatorInput('+')"> + </button>
+        </td>
+      </tr>
+
+      <!--Third Row-->
+      <tr>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(4)"> 4 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(5)"> 5 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(6)"> 6 </button>
+        </td>
+        <td>
+          <button class="operatorKey" onclick="operatorInput('-')"> - </button>
+        </td>
+      </tr>
+
+      <!--Fouth Row-->
+      <tr>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(1)"> 1 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(2)"> 2 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(3)"> 3 </button>
+        </td>
+        <td>
+          <button class="operatorKey" onclick="operatorInput('/')"> ÷ </button>
+        </td>
+      </tr>
+
+      <!--Fifth Row-->
+      <tr>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput(0)"> 0 </button>
+        </td>
+        <td>
+          <button class="numberKey" onclick="addNumberToInput('.')"> . </button>
+        </td>
+        <td>
+          <button id="equals" onclick="calculate()"> = </button>
+        </td>
+        <td>
+          <button class="operatorKey" onclick="operatorInput('*')"> × </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+
+<script src="calculator.js"></script>
+</html>
